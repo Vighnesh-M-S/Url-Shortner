@@ -12,7 +12,7 @@ $shortener = new Shortener($db);
 $longURL = 'https://www.codexworld.com/tutorials/php/';
 
 // Prefix of the short URL 
-$shortURL_Prefix = 'https://xyz.com/'; // with URL rewrite
+$shortURL_Prefix = 'https://localhost/php_url_shortner/'; // with URL rewrite
 $shortURL_Prefix = 'https://xyz.com/?c='; // without URL rewrite
 
 try{
