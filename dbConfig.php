@@ -3,7 +3,7 @@
 $dbHost     = "localhost";
 $dbUsername = "root";
 $dbPassword = "root";
-$dbName     = "codexworld";
+$dbName     = "vigdb";
 
 // Create database connection
 try{
