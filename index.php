@@ -9,11 +9,11 @@ require_once 'Shortener.class.php';
 $shortener = new Shortener($db);
 
 // Long URL
-$longURL = 'https://www.codexworld.com/tutorials/php/';
+$longURL = 'https://www.youtube.com/watch?v=Zw5LhSNRJH8';
 
 // Prefix of the short URL 
 $shortURL_Prefix = 'https://localhost/php_url_shortner/'; // with URL rewrite
-$shortURL_Prefix = 'https://xyz.com/?c='; // without URL rewrite
+//$shortURL_Prefix = 'https://xyz.com/?c='; // without URL rewrite
 
 try{
     // Get short code of the URL
