@@ -2,7 +2,7 @@
 // Database configuration
 $dbHost     = "localhost";
 $dbUsername = "root";
-$dbPassword = "root";
+$dbPassword = "";
 $dbName     = "vigdb";
 
 // Create database connection
