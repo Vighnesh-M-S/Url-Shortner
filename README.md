@@ -1,6 +1,6 @@
 # Url-Shortner
 
-URL shortening service using LAMP(linux,Apache,MYSQL,php) stack.
+URL shortening service using MAMP(Macintosh,Apache,MYSQL,php) stack.
 
 URL Shortener Library (Shortener.class.php)
 
