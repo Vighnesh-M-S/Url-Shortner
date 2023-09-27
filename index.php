@@ -12,7 +12,7 @@ $shortener = new Shortener($db);
 $longURL = 'https://www.youtube.com/watch?v=Zw5LhSNRJH8';
 
 // Prefix of the short URL 
-$shortURL_Prefix = 'https://localhost/php_url_shortner/'; // with URL rewrite
+$shortURL_Prefix = 'https://localhost/Url-Shortner/'; // with URL rewrite
 //$shortURL_Prefix = 'https://xyz.com/?c='; // without URL rewrite
 
 try{
