@@ -1,13 +1,13 @@
 <?php
-// Database configuration
-$dbHost     = "localhost";
-$dbUsername = "root";
-$dbPassword = "root";
-$dbName     = "vigdb";
-
-// Create database connection
-try{
-    $db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUsername, $dbPassword);
-}catch(PDOException $e){
-    echo "Connection failed: " . $e->getMessage();
+date_default_timezone_set('America/New_York');
+class Connect extends PDO
+{
+    public function __construct()
+    {
+        parent::__construct("mysql:host=localhost;dbname=vigdb", 'root', '',
+		array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+        $this->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $this->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+    }
 }
+?>
