@@ -1,30 +1,21 @@
 <?php
-// Include database configuration file
-require_once 'dbConfig.php';
+require_once('core/url.Class.php');
 
-// Include URL Shortener library file
-require_once 'Shortener.class.php';
+$URLShortener = new URLShortener;
 
-// Initialize Shortener class and pass PDO object
-$shortener = new Shortener($db);
-
-// Long URL
-$longURL = 'https://www.youtube.com/watch?v=Zw5LhSNRJH8';
-
-// Prefix of the short URL 
-$shortURL_Prefix = 'https://localhost/Url-Shortner/'; // with URL rewrite
-//$shortURL_Prefix = 'https://xyz.com/?c='; // without URL rewrite
-
-try{
-    // Get short code of the URL
-    $shortCode = $shortener->urlToShortCode($longURL);
-    
-    // Create short URL
-    $shortURL = $shortURL_Prefix.$shortCode;
-    
-    // Display short URL
-    echo 'Short URL: '.$shortURL;
-}catch(Exception $e){
-    // Display error
-    echo $e->getMessage();
-}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>URL Shortener</title>
+    <link rel='stylesheet' href='css/style.css' />
+</head>
+<body>
+<?php
+echo $URLShortener -> mainForm();
+?>
+</body>
+</html>
