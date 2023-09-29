@@ -8,7 +8,7 @@ $getLongURL -> execute([
 ]);
 $num = $getLongURL->fetchAll(PDO::FETCH_COLUMN);
 if(count($num) != 0){
-    header("Location: " . $num[]);
+    header("Location: " . $num[0]);
 }else{
     echo "This URL doen't exist!";
 }
